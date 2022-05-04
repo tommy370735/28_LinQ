@@ -38,3 +38,4 @@ C:\所有資料\LinQ\作業整合\Homework\28_LinQ\28_LinQ\bin\Debug\EntityFrame
 C:\所有資料\LinQ\作業整合\Homework\28_LinQ\28_LinQ\bin\Debug\zh-Hant\EntityFramework.resources.dll
 C:\所有資料\LinQ\作業整合\Homework\28_LinQ\28_LinQ\obj\Debug\28_LinQ.csproj.CopyComplete
 C:\所有資料\LinQ\作業整合\Homework\28_LinQ\28_LinQ\obj\Debug\MyHomeWork.Frm作業_3.resources
+C:\所有資料\LinQ\作業整合\Homework\28_LinQ\28_LinQ\obj\Debug\LinqLabs.Frm考試.resources
