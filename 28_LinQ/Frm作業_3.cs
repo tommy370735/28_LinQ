@@ -192,9 +192,17 @@ namespace MyHomeWork
 
         private void button10_Click(object sender, EventArgs e)
         {// Orders -  Group by 年 / 月
-            var q = from n in this.dbContext.Orders
-                          group n by new { n.OrderDate.Value.Year, n.OrderDate.Value.Month } into g
-                          orderby g.Key
+
+            //var q1 = this.dbContext.Orders.AsEnumerable().GroupBy(o => o.OrderDate.Value.ToString("yyyy-MM")).OrderByDescending(o => o.Key)
+            //    .Select(g => new
+            //    {
+            //        時間 = g.Key,
+            //        月訂單數=g.Count()
+            //    });
+         
+            var q = from n in this.dbContext.Orders.AsEnumerable()
+                          group n by n.OrderDate.Value.ToString("yyyy-MM") into g//透過ToString("yyyy-MM")格式化
+                    orderby g.Key
                           select new
                           {
                               時間 =g.Key,
